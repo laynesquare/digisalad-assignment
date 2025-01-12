@@ -31,7 +31,8 @@ export default function Home() {
               `before:translate-x-[-1.6%] before:translate-y-[-220%]`,
               `before:absolute before:bottom-0 before:left-0 before:-z-10 before:box-content before:h-0 before:w-[571px] before:border-[4px] before:border-[var(--color-bar-primary)] before:bg-[var(--color-bar-primary)] before:content-['']`,
               // orange dot
-              `after:absolute after:bottom-0 after:right-0 after:z-[-1] after:h-[10px] after:w-[10px] after:translate-x-[124%] after:translate-y-[-210%] after:rounded-full after:bg-[var(--color-dot-primary)] after:content-['']`,
+              `after:translate-x-[124%] after:translate-y-[-210%]`,
+              `after:absolute after:bottom-0 after:right-0 after:z-[-1] after:h-[10px] after:w-[10px] after:rounded-full after:bg-[var(--color-dot-primary)] after:content-['']`,
             )}
           >
             DIGITAL EXPERIENCES
@@ -70,13 +71,23 @@ export default function Home() {
       </header>
 
       <section className="m-auto flex max-w-screen-xl flex-col items-center px-[216px] py-[125px]">
-        <h2 className="text-secondary relative mb-[86px] text-[28px] font-bold leading-[34.1px] tracking-[3.64px]">
+        <h2
+          className={clsx(
+            `test text-secondary relative mb-[86px] text-[28px] font-bold leading-[34.1px] tracking-[3.64px]`,
+            `after:translate-x-[300%] after:translate-y-[-60%]`,
+            `after:absolute after:bottom-0 after:right-0 after:z-[-1] after:h-[10px] after:w-[10px] after:rounded-full after:bg-[var(--color-dot-primary)] after:content-['']`,
+          )}
+        >
           ABOUT DIGISALAD
         </h2>
 
         <div className="mb-[30px] max-w-[1007px]">video</div>
 
-        <p className="text-tertiary mb-[30px] whitespace-pre-line bg-white text-center text-base leading-[28px] tracking-[1px]">
+        <p
+          className={clsx(
+            `text-tertiary mb-[30px] whitespace-pre-line text-center text-[16px] leading-[28px] tracking-[1px]`,
+          )}
+        >
           {`Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor. In feugiat orci odio, sed lacinia sem elementum quis. Aliquam consectetur, eros et vulputate euismod, nunc leo tempor lacus, ac rhoncus neque eros nec lacus. Cras lobortis molestie faucibus.`}
         </p>
 
